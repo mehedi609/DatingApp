@@ -1,7 +1,10 @@
 {
-  "extends": "tslint:recommended",
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
+  ],
   "rulesDirectory": [
-    "codelyzer"
+    "tslint-plugin-prettier"
   ],
   "rules": {
     "array-type": false,
@@ -70,6 +73,7 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true
+    "directive-class-suffix": true,
+    "prettier": [true, { "singleQuote": true }]
   }
 }
